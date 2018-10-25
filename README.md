@@ -1,2 +1,3 @@
 # vue-views
-VUE 常用组件整合
+
+基于Vue，常用UI组件集合。

@@ -1,4 +1,7 @@
+# IDE
 .idea
+
+# CLI
 dist
 node_modules
 package-lock.json
