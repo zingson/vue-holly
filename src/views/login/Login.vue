@@ -167,7 +167,7 @@
         },
         methods:{
             login(){
-                const body = vm.$http.post({loginId:this.loginId,password:this.password});
+
             }
         }
     }
