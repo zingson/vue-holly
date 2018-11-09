@@ -11,11 +11,11 @@
     </div>
 </template>
 <script>
-    export default {
-        data () {
-            return {
-                msg: "admin"
-            }
-        }
+export default {
+  data () {
+    return {
+      msg: 'admin'
     }
+  }
+}
 </script>

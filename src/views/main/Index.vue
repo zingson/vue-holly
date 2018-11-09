@@ -6,25 +6,29 @@
         <aside v-bind:style="asideHeight">
             <v-sidebar></v-sidebar>
         </aside>
-        <section>
+        <section v-bind:style="sectionWidth">
             <router-view></router-view>
         </section>
+
     </div>
 </template>
 
 <script>
-    import Header from './Header.vue'
-    import Sidebar from './Sidebar.vue'
+import Header from './Header.vue'
+import Sidebar from './Sidebar.vue'
 
-    export default {
-        name: "Index",
-        components: {'v-header': Header, 'v-sidebar': Sidebar},
-        computed:{
-            asideHeight:function () {
-                return "height:"+(document.body.clientHeight-65)+"px;";
-            }
-        }
+export default {
+  name: 'Index',
+  components: { 'v-header': Header, 'v-sidebar': Sidebar },
+  computed: {
+    asideHeight: function () {
+      return 'height:' + (document.body.clientHeight - 65) + 'px;'
+    },
+    sectionWidth: function () {
+      return 'width:' + (document.body.clientWidth - 150) + 'px;'
     }
+  }
+}
 </script>
 
 <style scoped>
@@ -33,5 +37,10 @@ aside{
     width: 150px;
     margin-top: -65px;
     padding-top: 65px;
+    float: left;
 }
+    section{
+        float: right;
+        width: 500px;
+    }
 </style>

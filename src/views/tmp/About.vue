@@ -5,11 +5,11 @@
     </div>
 </template>
 <script>
-    export default {
-        data () {
-            return {
-                msg: "我是About.vue 组件"
-            }
-        }
+export default {
+  data () {
+    return {
+      msg: '我是About.vue 组件'
     }
+  }
+}
 </script>

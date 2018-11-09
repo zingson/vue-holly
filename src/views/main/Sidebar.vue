@@ -1,7 +1,7 @@
 <template>
     <ul class="nav">
         <li>
-            <a href="javascript:;">默认展开</a>
+            <a href="javascript:;" @click="accordion" class="item">默认展开</a>
             <dl class="nav-child">
                 <dd><a href="javascript:;">选项1</a></dd>
                 <dd><a href="javascript:;">选项2</a></dd>
@@ -18,16 +18,22 @@
         </li>
         <li class=""><a href="javascript:;">产品</a></li>
         <li class=""><a href="javascript:;">大数据</a></li>
+
     </ul>
+
 </template>
 
 <script>
-    export default {
-        name: "Sidebar",
-        methods: {
-
-        }
+import $ from 'jquery'
+// import lay from 'layui'
+export default {
+  name: 'Sidebar',
+  methods: {
+    accordion: function (event) {
+      this.$log($(event.target).attr('class'))
     }
+  }
+}
 </script>
 
 <style scoped>
@@ -67,6 +73,5 @@
     .activity{
         background-color: #01AAED;
     }
-
 
 </style>

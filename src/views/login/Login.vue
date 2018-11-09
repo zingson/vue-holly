@@ -150,27 +150,24 @@
         padding: 0 0 0 30px;
     }
 
-
 </style>
 
-
 <script>
-    export default {
-        name: 'Login',
-        data() {
-            return {
-                title: '优麦圈管理平台登录',
-                loginId:'',
-                password:'',
-                imageCode:''
-            };
-        },
-        methods:{
-            login(){
-
-            }
-        }
+export default {
+  name: 'Login',
+  data () {
+    return {
+      title: '优麦圈管理平台登录',
+      loginId: '',
+      password: '',
+      imageCode: ''
     }
+  },
+  methods: {
+    login () {
 
+    }
+  }
+}
 
 </script>
