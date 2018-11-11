@@ -12,10 +12,10 @@
 </template>
 <script>
 export default {
-  data () {
-    return {
-      msg: 'admin'
+    data () {
+        return {
+            msg: 'admin'
+        }
     }
-  }
 }
 </script>

@@ -25,9 +25,6 @@
 </template>
 
 <style scoped>
-    /* 图标库 */
-    @import '../../assets/lib/font-awesome-4.7.0/css/font-awesome.css';
-
     .main {
         background-color: #EBEBEC;
         height: 100%;
@@ -154,20 +151,20 @@
 
 <script>
 export default {
-  name: 'Login',
-  data () {
-    return {
-      title: '优麦圈管理平台登录',
-      loginId: '',
-      password: '',
-      imageCode: ''
-    }
-  },
-  methods: {
-    login () {
+    name: 'Login',
+    data () {
+        return {
+            title: '优麦圈管理平台登录',
+            loginId: '',
+            password: '',
+            imageCode: ''
+        }
+    },
+    methods: {
+        login () {
 
+        }
     }
-  }
 }
 
 </script>

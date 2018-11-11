@@ -14,12 +14,11 @@
 
 <script>
 export default {
-  name: 'Header'
+    name: 'Header'
 }
 </script>
 
 <style scoped>
-    @import '../../assets/lib/font-awesome-4.7.0/css/font-awesome.css';
 
     .header {
         background-color: #2083D8;

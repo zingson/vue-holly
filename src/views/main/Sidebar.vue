@@ -17,7 +17,7 @@
             </dl>
         </li>
         <li class=""><a href="javascript:;">产品</a></li>
-        <li class=""><a href="javascript:;">大数据</a></li>
+        <li class=""><a href="javascript:;" @click="layuiLay">大数据</a></li>
 
     </ul>
 
@@ -25,18 +25,24 @@
 
 <script>
 import $ from 'jquery'
-import layui from '../../assets/lib/layui-v2.4.5/layui/layui.export.js'
 
 export default {
-  name: 'Sidebar',
-  methods: {
-    accordion: function (event) {
-      this.$log($(event.target).attr('class'))
+    name: 'Sidebar',
+    methods: {
+        accordion: function (event) {
+            console.log($(event.target).attr('class'))
+        },
+        layuiLay: function () {
+            layui.use(['layer', 'form'], function () {
+                var layer = layui.layer
+                console.log(layer)
+            })
+            console.log(layui)
+        }
+    },
+    mounted: function () {
+
     }
-  },
-  mounted:function () {
-    layui.config()
-  }
 }
 </script>
 
@@ -44,8 +50,9 @@ export default {
     ul, li, dl, dd {
         margin: 0;
         padding: 0;
-        list-style:none;
+        list-style: none;
     }
+
     a {
         text-decoration: none;
         color: #fff;
@@ -53,14 +60,20 @@ export default {
         overflow: hidden;
         white-space: nowrap;
     }
-    .hide{display: none;}
+
+    .hide {
+        display: none;
+    }
 
     .nav {
         width: 100%;
         height: 100%;
         background-color: #0C0C0C;
     }
-    .nav li{}
+
+    .nav li {
+    }
+
     .nav li a {
         display: block;
         height: 30px;
@@ -68,13 +81,16 @@ export default {
         padding-left: 15px;
         background-color: #505464;
     }
-    .nav li a:hover{
+
+    .nav li a:hover {
         background-color: #01AAED;
     }
-    .nav-child dd a{
+
+    .nav-child dd a {
         padding-left: 30px;
     }
-    .activity{
+
+    .activity {
         background-color: #01AAED;
     }
 

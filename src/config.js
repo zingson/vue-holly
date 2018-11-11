@@ -1,3 +1,3 @@
 export default {
-    gatewayUrl:"http://localhost:8080"
+    gatewayUrl: 'http://localhost:8080'
 }
