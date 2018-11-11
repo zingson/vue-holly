@@ -1,10 +1,10 @@
 <template>
     <div id="main">
         <header>
-            <v-header></v-header>
+            <ms-header></ms-header>
         </header>
         <aside v-bind:style="asideHeight">
-            <v-sidebar></v-sidebar>
+            <ms-nav-bar></ms-nav-bar>
         </aside>
         <section v-bind:style="sectionWidth">
             <router-view></router-view>
@@ -15,11 +15,11 @@
 
 <script>
 import Header from './Header.vue'
-import Sidebar from './Sidebar.vue'
+import NavBar from '../../components/NavBar.vue'
 
 export default {
   name: 'Index',
-  components: { 'v-header': Header, 'v-sidebar': Sidebar },
+  components: { 'ms-header': Header, 'ms-nav-bar': NavBar },
   computed: {
     asideHeight: function () {
       return 'height:' + (document.body.clientHeight - 65) + 'px;'

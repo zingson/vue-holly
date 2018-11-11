@@ -5,11 +5,18 @@
 </template>
 
 <style lang="less">
-    html, body, #app {
+    .size{
+        width: 100%;
+        height: 100%;
+    }
+    html,body{
+        .size;
+        overflow: hidden;
         margin: 0;
         padding: 0;
-        height: 100%;
-        width:100%;
+    }
+    #app {
+        .size;
     }
 </style>
 

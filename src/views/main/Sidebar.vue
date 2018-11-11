@@ -25,13 +25,17 @@
 
 <script>
 import $ from 'jquery'
-// import lay from 'layui'
+import layui from '../../assets/lib/layui-v2.4.5/layui/layui.export.js'
+
 export default {
   name: 'Sidebar',
   methods: {
     accordion: function (event) {
       this.$log($(event.target).attr('class'))
     }
+  },
+  mounted:function () {
+    layui.config()
   }
 }
 </script>
