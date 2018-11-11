@@ -80,6 +80,9 @@ export default {
         line-height: 40px;
         background-color: #fff;
     }
+    .content{
+        padding: 15px;
+    }
     .footer{
         text-align: center;
         position: relative;
