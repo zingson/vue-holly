@@ -1,16 +1,16 @@
 <template>
-    <ul class="layui-nav layui-nav-tree layui-bg-cyan layui-inline" lay-filter="demo">
-        <li class="layui-nav-item"><a href="">首页</a></li>
+    <ul class="layui-nav layui-nav-tree layui-bg-cyan layui-inline" lay-filter="lotteryManage">
+        <li class="layui-nav-item"><a href="#/main">首页</a></li>
         <li class="layui-nav-item layui-nav-itemed">
             <a href="javascript:;">信息统计</a>
             <dl class="layui-nav-child">
-                <dd><a href="javascript:;">七乐彩销售统计</a></dd>
-                <dd><a href="javascript:;">双色球销售统计</a></dd>
+                <dd><a href="#/main/statistics">七乐彩销售统计</a></dd>
+                <dd><a href="#/main/statistics">双色球销售统计</a></dd>
             </dl>
         </li>
         <li class="layui-nav-item"><a href="">订单查询</a></li>
         <li class="layui-nav-item">
-            <a href="javascript:;">财务结算</a>
+            <a href="javascript:void(0);">财务结算</a>
             <dl class="layui-nav-child">
                 <dd><a href="">账户管理</a></dd>
                 <dd><a href="">日报表结算</a></dd>
@@ -35,7 +35,7 @@ export default {
             var element = layui.element
 
             // 监听导航点击
-            element.on('nav(demo)', function (elem) {
+            element.on('nav(lotteryManage)', function (elem) {
                 layer.msg(elem.text())
             })
         })
