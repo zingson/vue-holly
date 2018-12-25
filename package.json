@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "babel-runtime": "^6.26.0",
+    "core-js": "^2.6.1",
     "echarts": "4.1.0",
     "es6-promise": "^4.2.5",
     "file-saver": "1.3.8",
@@ -29,13 +31,15 @@
     "@vue/cli-plugin-eslint": "^3.1.4",
     "@vue/cli-service": "^3.1.3",
     "@vue/eslint-config-standard": "^4.0.0",
+    "eslint": "^5.11.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "increase-memory-limit": "^1.0.6",
     "less": "^3.8.1",
     "less-loader": "^4.1.0",
     "lint-staged": "^8.0.4",
     "vue-loader": "^15.4.2",
     "vue-template-compiler": "^2.5.17",
-    "webpack-cli": "^3.1.2",
-    "increase-memory-limit":"^1.0.6"
+    "webpack-cli": "^3.1.2"
   },
   "eslintConfig": {
     "root": true,
@@ -62,7 +66,7 @@
     "not ie <= 8"
   ],
   "engines": {
-    "node": ">= 8.12.0",
-    "npm": ">= 6.4.0"
+    "node": ">= 10.14.1",
+    "npm": ">= 6.4.1"
   }
 }
